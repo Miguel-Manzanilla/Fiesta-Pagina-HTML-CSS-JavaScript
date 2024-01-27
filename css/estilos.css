@@ -1,0 +1,294 @@
+/*Fuente externa usada en la pagina*/
+@font-face {
+    font-family: Cocogoose;
+    src: url(../font/Cocogoose.otf);
+}
+
+/*Etiquetas principales*/
+body {
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-image: url(../images/fondo.jpg);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 160px;
+
+}
+
+/*Fin de etiquetas prinicipales*/
+
+/*Cabecera de la pagina */
+/*Parte superior de la cabecera*/
+.superior {
+    width: 100%;
+    height: 40px;
+    margin: 0 auto;
+    background-color: black;
+    position:absolute; 
+    z-index:3;
+}
+
+.superior nav {
+    float: right;
+    margin-top: 1%;
+    width: 215px;
+    position:absolute; 
+    z-index:3;
+}
+
+.superior>nav>a:link,
+.superior>nav>a:hover,
+.superior>nav>a:visited {
+    text-decoration: none;
+    color: white;
+    margin-left: 2%;
+    position:absolute; 
+    z-index:3;
+}
+
+/*Fin de la parte superior*/
+/*Parte inforior de la cabecera*/
+.inferior {
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    background-color: white;
+    position:absolute; 
+    z-index:3;
+}
+
+.inferior nav {
+    float: right;
+    margin-top: 2%;
+    width: 340px;
+    font-size: 18px;
+}
+
+.logo {
+    margin-top: 10px;
+    height: 80px;
+    float: left;
+    margin-left: 4%;
+}
+
+.inferior>nav>a:link,
+.inferior>nav>a:visited {
+    text-decoration: none;
+    color: black;
+    margin-left: 2%;
+}
+
+
+
+/*Fin de la parte inferior de la cabecera*/
+/*Fin de la cabecera de la pagina*/
+
+/*Inicio de las etiquetas que actuan sobre la informacion y titulo de la pagina*/
+.sobre {
+    margin-top: 160px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.subtitulo {
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+}
+
+.titulo {
+    color: red;
+    font-size: 65px;
+    font-family: Cocogoose;
+}
+
+.descripcion {
+    font-size: 25px;
+    margin-right: 25%;
+    border: white 5px solid;
+    padding: 1%;
+}
+
+.fecha {
+    font-size: 35px;
+    font-family: Cocogoose;
+}
+
+.desc-fec {
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+/*Fin de las etiquetas sobre la informacion de la fiesta*/
+
+/*Inicio de las etiquetas que afectan al scrit de la cuenta atras*/
+#cuenta-atras {
+    background-color: black;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    padding: 1%;
+}
+
+script {
+    background-color: black;
+}
+
+/*Fin de la etiquetas asociadas al script*/
+
+/*Etiquetas sobre el programa principal*/
+.programa {
+    padding-top: 35px;
+    background-image: url(../images/fill-bg.png);
+    background-color: rgb(45, 45, 45);
+    text-align: center;
+    color: white;
+}
+
+.barra-peq {
+    border: 2px red solid;
+    width: 35px;
+}
+
+.caja-principal {
+    margin-top: 15px;
+    width: 78%;
+    margin-left: 11%;
+    margin-right: 11%;
+    display: flex;
+}
+
+.cajas {
+    width: 20%;
+    background-color: rgba(114, 114, 114, 0.419);
+    padding: 2%;
+    margin: 1%;
+}
+
+.titulo-programas {
+    color: red;
+}
+
+.programa>a.info:link,
+.programa>a.info:hover,
+.programa>a.info:visited {
+    color: white;
+    font-size: 20px;
+}
+
+/*Fin de las etiquetas del programa*/
+
+/*Inicio de las etiquetas que afectan a las parte de la presentacion de los presentadores*/
+.hablan {
+    padding-top: 35px;
+    background-color: white;
+    color: black;
+    font-size: 22px;
+    text-align: center;
+}
+
+.presentadores {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.presentadores>div {
+    display: flex;
+    text-align: left;
+}
+
+.presentadores>div>img {
+    width: 200px;
+    height: 200px;
+    margin: 2%;
+    z-index: 2;
+}
+
+.imagenes{
+    z-index: 2;
+}
+
+.goya {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.coello {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.picasso {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.velazquez {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.barra-gris {
+    border: 2px grey solid;
+    width: 30px;
+    float: left;
+    margin: 0;
+}
+
+.titulo-rojo {
+    color: red;
+    margin: 0;
+}
+
+/*Fin de las etiquetas asociadas a la parte de los presentadores*/
+
+/*Inicio de las etiquetas que dan formato a los patrocinadores*/
+.patrocinadores {
+    padding-top: 35px;
+    background-color: rgb(45, 45, 45);
+    color: white;
+    font-size: 22px;
+    text-align: center;
+}
+
+.fotos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.fotos>img {
+    width: 20%;
+    filter: grayscale(200%);
+}
+/*Fin de las etiquetas que dan estilo a los patrocinadores*/
+
+/*Inicio de las etiquetas que dan formato al pie de la página*/
+footer {
+    padding-top: 35px;
+    background-color: rgb(227, 226, 226);
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+footer>img {
+    height: 120px;
+    margin-right: 5%;
+}
+
+/*Fin de etiquetas de pie de la página*/
